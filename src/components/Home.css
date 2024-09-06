@@ -1,0 +1,86 @@
+/* src/components/Home.css */
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+}
+
+.home-image {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.home-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.home-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.home-button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #333;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Stacks items vertically */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .home-image {
+    padding-right: 0;
+    padding-bottom: 20px; /* Adds some space between the image and text */
+  }
+
+  .home-content {
+    padding-left: 0;
+    text-align: center; /* Centers the text on smaller screens */
+  }
+
+  .home-content h1 {
+    font-size: 2rem; /* Slightly smaller font size for mobile */
+  }
+
+  .home-content p {
+    font-size: 1rem; /* Slightly smaller font size for mobile */
+  }
+
+  .home-button {
+    font-size: 0.9rem; /* Adjust button size */
+    padding: 8px 16px; /* Adjust padding for button */
+  }
+}
