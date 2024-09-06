@@ -16,7 +16,7 @@ const App: React.FC = () => {
       <Routes>
         {/* Both / and /home route to the Home component */}
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/website" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/outreach" element={<Outreach />} />
