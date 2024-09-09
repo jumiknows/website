@@ -6,7 +6,7 @@ const projects = [
     title: 'ALEASAT', 
     image: 'https://raw.githubusercontent.com/balloon4computing/artifact/main/image1.png', 
     description: 'Our most ambitious project yet. Alongside UBC Orbit, we are sending a 1U cube satellite into space. The satellite will provide research data relating to human physiology and will provide pictures of Earth for amateur radio operators.', 
-    link: '/projects/aleasat' 
+    // link: '/projects/aleasat' 
   },
   { 
     title: 'Balloon 3', 
@@ -55,13 +55,13 @@ const ProjectsPage: React.FC = () => {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <a href={project.link}>
+            {/* <a href={project.link}> */}
               <img src={project.image} alt={project.title} className="project-image" />
               <div className="project-details">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
               </div>
-            </a>
+            {/* </a> */}
           </div>
         ))}
       </div>
