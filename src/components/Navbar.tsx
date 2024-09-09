@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         <li><Link to="/projects" onClick={toggleMenu}>Projects</Link></li>
         {/* <li><Link to="/sponsors" onClick={toggleMenu}>Sponsors</Link></li> */}
         {/* <li><Link to="/outreach" onClick={toggleMenu}>Outreach</Link></li> */}
-        {/* <li><Link to="/about" onClick={toggleMenu}>About</Link></li> */}
+        <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
         <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
       </ul>
     </nav>
