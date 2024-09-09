@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
       <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
         {/* Updated to use / instead of /home */}
         <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-        {/* <li><Link to="/projects" onClick={toggleMenu}>Projects</Link></li> */}
+        <li><Link to="/projects" onClick={toggleMenu}>Projects</Link></li>
         {/* <li><Link to="/sponsors" onClick={toggleMenu}>Sponsors</Link></li> */}
         {/* <li><Link to="/outreach" onClick={toggleMenu}>Outreach</Link></li> */}
         {/* <li><Link to="/about" onClick={toggleMenu}>About</Link></li> */}

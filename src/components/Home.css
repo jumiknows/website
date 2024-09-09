@@ -68,7 +68,7 @@
 
   .home-content {
     padding-left: 0;
-    text-align: center; /* Centers the text on smaller screens */
+    text-align: left; /* Centers the text on smaller screens */
   }
 
   .home-content h1 {

@@ -8,6 +8,7 @@ import Outreach from './components/Outreach';
 import About from './components/About';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar'; // Your Navbar component
+import Aleasat from './components/pages/Aleasat'; // Import the ALEASAT page
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Route path="/outreach" element={<Outreach />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/projects/aleasat" element={<Aleasat />} />
       </Routes>
     </Router>
   );
