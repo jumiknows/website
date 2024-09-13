@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   return (
     <div className="home-container">
       <div className="home-image">
-        <img src="https://github.com/balloon4computing/artifact/blob/main/balloon.jpg?raw=true" alt="SFU SAT team" />
+        <img src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/balloon.jpg" alt="SFU SAT team" />
       </div>
       <div className="home-content">
         <h1>Making Space Accessible.</h1>

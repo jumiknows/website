@@ -8,7 +8,7 @@ const AboutPage: React.FC = () => {
       <div className="about-section">
         <div className="about-content">
           <img
-            src="https://github.com/balloon4computing/artifact/blob/main/team.jpg?raw=true"
+            src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/team.jpg"
             alt="SFU Satellite Design Team"
             className="about-image"
           />
@@ -29,7 +29,7 @@ const AboutPage: React.FC = () => {
       <div className="about-section">
         <div className="about-content about-content-right">
           <img
-            src="https://github.com/balloon4computing/artifact/blob/main/adcs.png?raw=true"
+            src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/adcs.png"
             alt="ADCS"
             className="about-image"
           />
@@ -51,7 +51,7 @@ const AboutPage: React.FC = () => {
       <div className="about-section">
         <div className="about-content">
           <img
-            src="https://github.com/balloon4computing/artifact/blob/main/obc.jpg?raw=true"
+            src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/obc.jpg"
             alt="Command and Data Handling"
             className="about-image"
           />
@@ -70,7 +70,7 @@ const AboutPage: React.FC = () => {
       <div className="about-section">
         <div className="about-content about-content-right">
           <img
-            src="https://github.com/balloon4computing/artifact/blob/main/comms.jpg?raw=true"
+            src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/comms.jpg"
             alt="Communications"
             className="about-image"
           />
@@ -89,7 +89,7 @@ const AboutPage: React.FC = () => {
       <div className="about-section">
         <div className="about-content">
           <img
-            src="https://github.com/balloon4computing/artifact/blob/main/eps.jpg?raw=true"
+            src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/eps.jpg"
             alt="Electrical Power System"
             className="about-image"
           />
@@ -109,7 +109,7 @@ const AboutPage: React.FC = () => {
       <div className="about-section">
         <div className="about-content about-content-right">
           <img
-            src="https://github.com/balloon4computing/artifact/blob/main/payload.jpg?raw=true"
+            src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/payload.jpg"
             alt="Payload"
             className="about-image"
           />
@@ -130,7 +130,7 @@ const AboutPage: React.FC = () => {
       <div className="about-section">
         <div className="about-content">
           <img
-            src="https://github.com/balloon4computing/artifact/blob/main/structure.png?raw=true"
+            src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/structure.png"
             alt="Structure"
             className="about-image"
           />
@@ -150,7 +150,7 @@ const AboutPage: React.FC = () => {
       <div className="about-section">
         <div className="about-content about-content-right">
           <img
-            src="https://github.com/balloon4computing/artifact/blob/main/mops.png?raw=true"
+            src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/mops.png"
             alt="Mission Operations"
             className="about-image"
           />

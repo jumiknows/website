@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          <img src="https://raw.githubusercontent.com/balloon4computing/artifact/main/sfusatlogo.png" alt="SFU SAT" className="logo-button" />
+          <img src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/sfusatlogo.png" alt="SFU SAT" className="logo-button" />
         </Link>
       </div>
       <div className="hamburger" onClick={toggleMenu}>

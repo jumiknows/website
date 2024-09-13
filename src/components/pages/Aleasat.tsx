@@ -10,7 +10,7 @@ const AleasatPage: React.FC = () => {
       </header>
       <div className="aleasat-content">
         <img 
-          src="https://raw.githubusercontent.com/balloon4computing/artifact/main/image1.png" 
+          src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/image1.png" 
           alt="ALEASAT Satellite" 
           className="aleasat-image"
         />
