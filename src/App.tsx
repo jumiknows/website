@@ -1,14 +1,13 @@
 // App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home'; // Your Home component
-import Projects from './components/Projects'; // Other components
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Use HashRouter instead of BrowserRouter
+import Home from './components/Home';
+import Projects from './components/Projects';
 import Sponsors from './components/Sponsors';
 import Outreach from './components/Outreach';
 import About from './components/About';
 import Contact from './components/Contact';
-import Navbar from './components/Navbar'; // Your Navbar component
-// import Aleasat from './components/pages/Aleasat'; // Import the ALEASAT page
+import Navbar from './components/Navbar';
 
 const App: React.FC = () => {
   return (
@@ -23,7 +22,6 @@ const App: React.FC = () => {
         <Route path="/outreach" element={<Outreach />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/projects/aleasat" element={<Aleasat />} /> */}
       </Routes>
     </Router>
   );
