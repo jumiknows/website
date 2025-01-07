@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
         <Link to="/about" className="about-link">About page</Link> for more information on each team.
       </p>
       <a 
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdYgiNC-6-BoZ0v0RZ5AL2oUyHy_A3A7MahPT5YWuokFd0OTg/viewform" 
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc3OXiasyebSnDm-kJGlv_0HyAfPCMinNJzjfXbVuFw2YuTEA/viewform?fbzx=-7906452973412795932" 
         target="_blank" 
         rel="noopener noreferrer"
         className="contact-button"
