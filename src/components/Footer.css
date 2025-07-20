@@ -1,30 +1,82 @@
+/* Footer Styles */
 .footer {
-    display: flex;
-    justify-content: space-between; /* Align text and icon on opposite sides */
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  z-index: 10;
+  margin-top: auto; /* This ensures footer sticks to bottom */
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.mail-link {
+  text-decoration: none;
+  color: #74707075;
+  font-size: 1.2rem;
+}
+
+.mail-link:hover {
+  color: #646c74;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa; /* Light background color */
-    border-top: 1px solid #ddd; /* Optional border */
-    position: fixed; /* Keep footer at the bottom */
-    bottom: 0; /* Align at the bottom */
-    left: 0;
-    right: 0;
-    max-width: 100%; /* Prevent overflow */
-    z-index: 10;
+    gap: 8px;
+    padding: 10px 15px;
+    text-align: left;
+    min-height: 50px;
+    position: relative;
+    display: flex !important;
+    visibility: visible !important;
+    background-color: #f8f9fa !important;
+    border-top: 2px solid #333 !important;
+    margin-top: auto;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    width: 100%;
   }
   
   .footer p {
+    font-size: 10px;
+    color: #333 !important;
+    flex: 1;
     margin: 0;
-    font-size: 14px;
-    color: #333; /* Adjust text color as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
   }
   
   .mail-link {
-    text-decoration: none;
-    color: #74707075;
-    font-size: 1.2rem; /* Adjust icon size */
+    font-size: 0.9rem;
+    color: #333;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .footer p {
+    font-size: 9px;
   }
   
-  .mail-link:hover {
-    color: #646c74; /* Optional hover color */
+  .mail-link {
+    font-size: 0.8rem;
   }
+}

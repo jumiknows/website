@@ -1,35 +1,139 @@
 // Navbar.tsx
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  // Close menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
+  // Close menu when clicking outside (for mobile)
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      const navbar = document.querySelector('.navbar');
+      const isClickInsideNavbar = navbar?.contains(target);
+      
+      if (!isClickInsideNavbar && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.body.style.overflow = 'hidden'; // Prevent background scroll
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" role="navigation" aria-label="Main navigation">
       <div className="navbar-logo">
-        <Link to="/">
-          <img src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/sfusatlogo.png" alt="SFU SAT" className="logo-button" />
+        <Link to="/" aria-label="SFU SAT Home">
+          <img 
+            src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/sfusatlogo.png" 
+            alt="SFU SAT Logo" 
+            className="logo-button" 
+          />
         </Link>
       </div>
-      <div className="hamburger" onClick={toggleMenu}>
+      
+      <button 
+        className={`hamburger ${isOpen ? 'open' : ''}`} 
+        onClick={toggleMenu}
+        aria-label={isOpen ? 'Close menu' : 'Open menu'}
+        aria-expanded={isOpen}
+        aria-controls="navbar-menu"
+      >
         <span className="hamburger-line"></span>
         <span className="hamburger-line"></span>
         <span className="hamburger-line"></span>
-      </div>
-      <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        {/* Updated to use / instead of /home */}
-        <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-        <li><Link to="/projects" onClick={toggleMenu}>Projects</Link></li>
-        {/* <li><Link to="/sponsors" onClick={toggleMenu}>Sponsors</Link></li> */}
-        {/* <li><Link to="/outreach" onClick={toggleMenu}>Outreach</Link></li> */}
-        <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
-        <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
+      </button>
+      
+      <ul 
+        className={`navbar-links ${isOpen ? 'open' : ''}`}
+        id="navbar-menu"
+        role="menubar"
+      >
+        <li role="none">
+          <Link 
+            to="/" 
+            onClick={closeMenu}
+            className={location.pathname === '/' ? 'active' : ''}
+            role="menuitem"
+          >
+            Home
+          </Link>
+        </li>
+        <li role="none">
+          <Link 
+            to="/projects" 
+            onClick={closeMenu}
+            className={location.pathname === '/projects' ? 'active' : ''}
+            role="menuitem"
+          >
+            Projects
+          </Link>
+        </li>
+        <li role="none">
+          <Link 
+            to="/sponsors" 
+            onClick={closeMenu}
+            className={location.pathname === '/sponsors' ? 'active' : ''}
+            role="menuitem"
+          >
+            Sponsors
+          </Link>
+        </li>
+        <li role="none">
+          <Link 
+            to="/outreach" 
+            onClick={closeMenu}
+            className={location.pathname === '/outreach' ? 'active' : ''}
+            role="menuitem"
+          >
+            Outreach
+          </Link>
+        </li>
+        <li role="none">
+          <Link 
+            to="/about" 
+            onClick={closeMenu}
+            className={location.pathname === '/about' ? 'active' : ''}
+            role="menuitem"
+          >
+            About
+          </Link>
+        </li>
+        <li role="none">
+          <Link 
+            to="/contact" 
+            onClick={closeMenu}
+            className={location.pathname === '/contact' ? 'active' : ''}
+            role="menuitem"
+          >
+            Contact Us
+          </Link>
+        </li>
       </ul>
     </nav>
   );
