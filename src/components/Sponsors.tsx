@@ -15,7 +15,7 @@ const Sponsors: React.FC = () => {
           
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/Momentus.png" alt="Momentus Space" />
+              <img src="/images/sponsors/sponsor/Momentus.png" alt="Momentus Space" />
             </div>
             <div className="sponsor-content">
               <h3>Momentus Space</h3>
@@ -29,7 +29,7 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/sfss.png" alt="Simon Fraser Student Society" />
+              <img src="/images/sponsors/sponsor/sfss.png" alt="Simon Fraser Student Society" />
             </div>
             <div className="sponsor-content">
               <h3>Simon Fraser Student Society</h3>
@@ -42,7 +42,7 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/agi.png" alt="AGI" />
+              <img src="/images/sponsors/sponsor/agi.png" alt="AGI" />
             </div>
             <div className="sponsor-content">
               <h3>AGI</h3>
@@ -61,7 +61,7 @@ const Sponsors: React.FC = () => {
           
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/mda.png" alt="MDA" />
+              <img src="/images/sponsors/sponsor/mda.png" alt="MDA" />
             </div>
             <div className="sponsor-content">
               <h3>MDA</h3>
@@ -75,7 +75,7 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/csa.png" alt="Canadian Space Agency" />
+              <img src="/images/sponsors/sponsor/csa.png" alt="Canadian Space Agency" />
             </div>
             <div className="sponsor-content">
               <h3>Canadian Space Agency</h3>
@@ -89,7 +89,7 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/SFUAerospace.jpeg" alt="SFU Aerospace" />
+              <img src="/images/sponsors/sponsor/SFUAerospace.jpeg" alt="SFU Aerospace" />
             </div>
             <div className="sponsor-content">
               <h3>SFU Aerospace</h3>
@@ -103,7 +103,7 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/SFUFAS.png" alt="SFU Faculty of Applied Science" />
+              <img src="/images/sponsors/sponsor/SFUFAS.png" alt="SFU Faculty of Applied Science" />
             </div>
             <div className="sponsor-content">
               <h3>SFU Faculty of Applied Science</h3>
@@ -122,7 +122,7 @@ const Sponsors: React.FC = () => {
           
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/tallysman.png" alt="Tallysman Wireless" />
+              <img src="/images/sponsors/sponsor/tallysman.png" alt="Tallysman Wireless" />
             </div>
             <div className="sponsor-content">
               <h3>Tallysman Wireless</h3>
@@ -137,7 +137,7 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/MSE-Logo.jpg" alt="SFU Mechatronic Systems Engineering" />
+              <img src="/images/sponsors/sponsor/MSE-Logo.jpg" alt="SFU Mechatronic Systems Engineering" />
             </div>
             <div className="sponsor-content">
               <h3>SFU Mechatronic Systems Engineering</h3>
@@ -150,7 +150,7 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/SFUCS.jpg" alt="SFU Computing Science" />
+              <img src="/images/sponsors/sponsor/SFUCS.jpg" alt="SFU Computing Science" />
             </div>
             <div className="sponsor-content">
               <h3>SFU Computing Science</h3>
@@ -164,7 +164,7 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/SFUENSC.jpg" alt="SFU Engineering Science" />
+              <img src="/images/sponsors/sponsor/SFUENSC.jpg" alt="SFU Engineering Science" />
             </div>
             <div className="sponsor-content">
               <h3>SFU Engineering Science</h3>
@@ -177,7 +177,7 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/valispace.png" alt="Valispace" />
+              <img src="/images/sponsors/sponsor/valispace.png" alt="Valispace" />
             </div>
             <div className="sponsor-content">
               <h3>Valispace</h3>
@@ -191,7 +191,7 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/sponsor/DigiKey.png" alt="Digi-Key" />
+              <img src="/images/sponsors/sponsor/DigiKey.png" alt="Digi-Key" />
             </div>
             <div className="sponsor-content">
               <h3>Digi-Key</h3>

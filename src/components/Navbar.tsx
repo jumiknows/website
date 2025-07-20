@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-logo">
         <Link to="/" aria-label="SFU SAT Home">
           <img 
-            src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/sfusatlogo.png" 
+            src="/images/icons/sfusatlogo.png" 
             alt="SFU SAT Logo" 
             className="logo-button" 
           />

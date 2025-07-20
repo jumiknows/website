@@ -6,6 +6,8 @@
 html {
   scroll-behavior: smooth;
   height: 100%;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -18,8 +20,19 @@ body {
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
-  height: 100%;
+  width: 100%;
   position: relative;
+}
+
+/* Prevent mobile overscroll and horizontal swiping */
+html {
+  overscroll-behavior-x: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  overscroll-behavior-x: none;
+  touch-action: pan-y; /* Only allow vertical scrolling */
 }
 
 /* App Container */
@@ -30,6 +43,8 @@ body {
   min-height: 100dvh; /* Dynamic viewport height for mobile */
   text-align: left;
   position: relative;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Main Content Area */

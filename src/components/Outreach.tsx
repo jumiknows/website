@@ -7,71 +7,71 @@ import './Outreach.css';
 // Slideshow images from the outreach-events folder
 const slideshowImages = [
   {
-    url: '/outreach-events/image1.jpg',
+    url: '/images/outreach/events/image1.jpg',
     alt: 'Outreach Event 1'
   },
   {
-    url: '/outreach-events/image2.jpg',
+    url: '/images/outreach/events/image2.jpg',
     alt: 'Outreach Event 2'
   },
   {
-    url: '/outreach-events/image3.jpg',
+    url: '/images/outreach/events/image3.jpg',
     alt: 'Outreach Event 3'
   },
   {
-    url: '/outreach-events/image4.jpg',
+    url: '/images/outreach/events/image4.jpg',
     alt: 'Outreach Event 4'
   },
   {
-    url: '/outreach-events/image5.jpg',
+    url: '/images/outreach/events/image5.jpg',
     alt: 'Outreach Event 5'
   },
   {
-    url: '/outreach-events/image6.jpg',
+    url: '/images/outreach/events/image6.jpg',
     alt: 'Outreach Event 6'
   },
   {
-    url: '/outreach-events/image7.jpg',
+    url: '/images/outreach/events/image7.jpg',
     alt: 'Outreach Event 7'
   },
   {
-    url: '/outreach-events/image8.jpg',
+    url: '/images/outreach/events/image8.jpg',
     alt: 'Outreach Event 8'
   },
   {
-    url: '/outreach-events/image9.jpg',
+    url: '/images/outreach/events/image9.jpg',
     alt: 'Outreach Event 9'
   },
   {
-    url: '/outreach-events/image10.jpg',
+    url: '/images/outreach/events/image10.jpg',
     alt: 'Outreach Event 10'
   },
   {
-    url: '/outreach-events/image11.jpeg',
+    url: '/images/outreach/events/image11.jpeg',
     alt: 'Outreach Event 11'
   },
   {
-    url: '/outreach-events/image12.jpg',
+    url: '/images/outreach/events/image12.jpg',
     alt: 'Outreach Event 12'
   },
   {
-    url: '/outreach-events/image13.jpg',
+    url: '/images/outreach/events/image13.jpg',
     alt: 'Outreach Event 13'
   },
   {
-    url: '/outreach-events/image14.jpeg',
+    url: '/images/outreach/events/image14.jpeg',
     alt: 'Outreach Event 14'
   },
   {
-    url: '/outreach-events/image15.jpg',
+    url: '/images/outreach/events/image15.jpg',
     alt: 'Outreach Event 15'
   },
   {
-    url: '/outreach-events/image16.jpg',
+    url: '/images/outreach/events/image16.jpg',
     alt: 'Outreach Event 16'
   },
   {
-    url: '/outreach-events/image17.jpg',
+    url: '/images/outreach/events/image17.jpg',
     alt: 'Outreach Event 17'
   }
 ];
