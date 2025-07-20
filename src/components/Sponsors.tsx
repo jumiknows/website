@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sponsors.css';
 
 const Sponsors: React.FC = () => {
@@ -217,7 +218,7 @@ const Sponsors: React.FC = () => {
         {/* Call to Action Section */}
         <section className="sponsor-cta">
           <h2>Help Us Build a Satellite</h2>
-          <a href="/contact" className="cta-button">CONTACT US</a>
+          <Link to="/contact" className="cta-button">CONTACT US</Link>
         </section>
       </div>
     </div>

@@ -49,7 +49,7 @@ const projects = [
 const ProjectsPage: React.FC = () => {
   return (
     <div className="projects-page">
-      <h2 className="projects-title">Projects</h2>
+      {/* <h2 className="projects-title">Projects</h2> */}
       <p className="projects-subtitle"><br></br></p>
       {/* <p className="projects-subtitle">Click on an image to learn more!</p> */}
       <div className="projects-grid">

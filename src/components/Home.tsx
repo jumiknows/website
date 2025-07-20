@@ -50,7 +50,7 @@ const Home: React.FC = () => {
             <img src="/images/sponsors/sponsor/valispace.png" alt="Valispace" />
             <img src="/images/sponsors/sponsor/csa.png" alt="Canadian Space Agency" />
           </div>
-          <Link to="/contact" className="home-button">SPONSOR US</Link>
+          <Link to="/sponsors" className="home-button">SPONSOR US</Link>
         </div>
       </div>
     </div>
