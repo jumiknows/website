@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.css';
 
 const AboutPage: React.FC = () => {
+  // Preload critical images
+  useEffect(() => {
+    const preloadImages = [
+      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/team.jpg",
+      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/adcs.png",
+      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/obc.jpg"
+    ];
+
+    preloadImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
   const teams = [
     {
       id: 1,
@@ -68,6 +81,8 @@ const AboutPage: React.FC = () => {
                 src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/team.jpg"
                 alt="SFU Satellite Design Team"
                 className="team-photo"
+                loading="eager"
+                decoding="async"
               />
             </div>
             <div className="mission-text">
@@ -106,7 +121,7 @@ const AboutPage: React.FC = () => {
         <div className="container">
           <div className="teams-header">
             <h2>Our Specialized Teams</h2>
-            <p>Each team brings unique expertise to our satellite projects, working together to achieve mission success.</p>
+            {/* <p>Each team brings unique expertise to our satellite projects, working together to achieve mission success.</p> */}
           </div>
           
           <div className="teams-grid">
@@ -121,7 +136,12 @@ const AboutPage: React.FC = () => {
                     <p>{team.description}</p>
                   </div>
                   <div className="team-image">
-                    <img src={team.image} alt={team.name} />
+                    <img 
+                      src={team.image} 
+                      alt={team.name}
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                 </div>
               </div>

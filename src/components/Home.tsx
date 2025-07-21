@@ -1,15 +1,35 @@
 // src/components/Home.tsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import the Link component
 import './Home.css'; // Import the CSS file for styling
 
 const Home: React.FC = () => {
+  // Preload critical images
+  useEffect(() => {
+    const preloadImages = [
+      "/images/hero/balloon-optimized.jpg",
+      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/image1.png",
+      "/images/sponsors/sponsor/Momentus.png",
+      "/images/sponsors/sponsor/mda.png",
+      "/images/sponsors/sponsor/agi.png"
+    ];
+
+    preloadImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
   return (
     <div className="home-page">
       {/* Main Hero Section */}
       <div className="home-container">
         <div className="home-image">
-          <img src="/images/hero/balloon-optimized.jpg" alt="SFU SAT team" />
+          <img 
+            src="/images/hero/balloon-optimized.jpg" 
+            alt="SFU SAT team" 
+            loading="eager"
+            decoding="async"
+          />
         </div>
         <div className="home-content">
           <h1>Making Space Accessible.</h1>
@@ -27,7 +47,12 @@ const Home: React.FC = () => {
         {/* ALEASAT Section */}
         <div className="home-aleasat-section">
           <div className="aleasat-image">
-            <img src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/image1.png" alt="ALEASAT CubeSat" />
+            <img 
+              src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/image1.png" 
+              alt="ALEASAT CubeSat" 
+              loading="eager"
+              decoding="async"
+            />
           </div>
           <div className="aleasat-content">
             <h2>ALEASAT</h2>
@@ -43,12 +68,42 @@ const Home: React.FC = () => {
           <h2>Our Sponsors</h2>
           <p>Help Us Continue to educate and inspire future generations.</p>
           <div className="sponsors-grid">
-            <img src="/images/sponsors/sponsor/Momentus.png" alt="Momentus" />
-            <img src="/images/sponsors/sponsor/mda.png" alt="MDA" />
-            <img src="/images/sponsors/sponsor/agi.png" alt="AGI" />
-            <img src="/images/sponsors/sponsor/DigiKey.png" alt="DigiKey" />
-            <img src="/images/sponsors/sponsor/valispace.png" alt="Valispace" />
-            <img src="/images/sponsors/sponsor/csa.png" alt="Canadian Space Agency" />
+            <img 
+              src="/images/sponsors/sponsor/Momentus.png" 
+              alt="Momentus" 
+              loading="lazy"
+              decoding="async"
+            />
+            <img 
+              src="/images/sponsors/sponsor/mda.png" 
+              alt="MDA" 
+              loading="lazy"
+              decoding="async"
+            />
+            <img 
+              src="/images/sponsors/sponsor/agi.png" 
+              alt="AGI" 
+              loading="lazy"
+              decoding="async"
+            />
+            <img 
+              src="/images/sponsors/sponsor/DigiKey.png" 
+              alt="DigiKey" 
+              loading="lazy"
+              decoding="async"
+            />
+            <img 
+              src="/images/sponsors/sponsor/valispace.png" 
+              alt="Valispace" 
+              loading="lazy"
+              decoding="async"
+            />
+            <img 
+              src="/images/sponsors/sponsor/csa.png" 
+              alt="Canadian Space Agency" 
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <Link to="/sponsors" className="home-button">SPONSOR US</Link>
         </div>

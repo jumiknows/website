@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Sponsors.css';
 
 const Sponsors: React.FC = () => {
+  // Preload critical sponsor images
+  useEffect(() => {
+    const preloadImages = [
+      "/images/sponsors/sponsor/Momentus.png",
+      "/images/sponsors/sponsor/mda.png",
+      "/images/sponsors/sponsor/agi.png",
+      "/images/sponsors/sponsor/csa.png",
+      "/images/sponsors/sponsor/DigiKey.png"
+    ];
+
+    preloadImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
   return (
     <div className="sponsors-page">
       <div className="container">
@@ -16,7 +31,12 @@ const Sponsors: React.FC = () => {
           
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/Momentus.png" alt="Momentus Space" />
+              <img 
+                src="/images/sponsors/sponsor/Momentus.png" 
+                alt="Momentus Space" 
+                loading="eager"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>Momentus Space</h3>
@@ -30,7 +50,12 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/sfss.png" alt="Simon Fraser Student Society" />
+              <img 
+                src="/images/sponsors/sponsor/sfss.png" 
+                alt="Simon Fraser Student Society" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>Simon Fraser Student Society</h3>
@@ -43,7 +68,12 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/agi.png" alt="AGI" />
+              <img 
+                src="/images/sponsors/sponsor/agi.png" 
+                alt="AGI" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>AGI</h3>
@@ -62,7 +92,12 @@ const Sponsors: React.FC = () => {
           
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/mda.png" alt="MDA" />
+              <img 
+                src="/images/sponsors/sponsor/mda.png" 
+                alt="MDA" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>MDA</h3>
@@ -76,7 +111,12 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/csa.png" alt="Canadian Space Agency" />
+              <img 
+                src="/images/sponsors/sponsor/csa.png" 
+                alt="Canadian Space Agency" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>Canadian Space Agency</h3>
@@ -90,7 +130,12 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/SFUAerospace.jpeg" alt="SFU Aerospace" />
+              <img 
+                src="/images/sponsors/sponsor/SFUAerospace.jpeg" 
+                alt="SFU Aerospace" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>SFU Aerospace</h3>
@@ -104,7 +149,12 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/SFUFAS.png" alt="SFU Faculty of Applied Science" />
+              <img 
+                src="/images/sponsors/sponsor/SFUFAS.png" 
+                alt="SFU Faculty of Applied Science" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>SFU Faculty of Applied Science</h3>
@@ -123,7 +173,12 @@ const Sponsors: React.FC = () => {
           
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/tallysman.png" alt="Tallysman Wireless" />
+              <img 
+                src="/images/sponsors/sponsor/tallysman.png" 
+                alt="Tallysman Wireless" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>Tallysman Wireless</h3>
@@ -138,7 +193,12 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/MSE-Logo.jpg" alt="SFU Mechatronic Systems Engineering" />
+              <img 
+                src="/images/sponsors/sponsor/MSE-Logo.jpg" 
+                alt="SFU Mechatronic Systems Engineering" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>SFU Mechatronic Systems Engineering</h3>
@@ -151,7 +211,12 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/SFUCS.jpg" alt="SFU Computing Science" />
+              <img 
+                src="/images/sponsors/sponsor/SFUCS.jpg" 
+                alt="SFU Computing Science" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>SFU Computing Science</h3>
@@ -165,7 +230,12 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/SFUENSC.jpg" alt="SFU Engineering Science" />
+              <img 
+                src="/images/sponsors/sponsor/SFUENSC.jpg" 
+                alt="SFU Engineering Science" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>SFU Engineering Science</h3>
@@ -178,7 +248,12 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/valispace.png" alt="Valispace" />
+              <img 
+                src="/images/sponsors/sponsor/valispace.png" 
+                alt="Valispace" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>Valispace</h3>
@@ -192,7 +267,12 @@ const Sponsors: React.FC = () => {
 
           <div className="sponsor-item">
             <div className="sponsor-logo">
-              <img src="/images/sponsors/sponsor/DigiKey.png" alt="Digi-Key" />
+              <img 
+                src="/images/sponsors/sponsor/DigiKey.png" 
+                alt="Digi-Key" 
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="sponsor-content">
               <h3>Digi-Key</h3>

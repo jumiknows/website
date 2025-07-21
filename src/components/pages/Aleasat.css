@@ -29,6 +29,14 @@
   max-width: 80%;
   height: auto;
   margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInImage 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInImage {
+  to {
+    opacity: 1;
+  }
 }
 
 .aleasat-description {

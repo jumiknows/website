@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Aleasat.css';
 
 const AleasatPage: React.FC = () => {
+  // Preload the ALEASAT image
+  useEffect(() => {
+    const preloadImages = [
+      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/image1.png"
+    ];
+
+    preloadImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
   return (
     <div className="aleasat-page">
       <header className="aleasat-header">
@@ -13,6 +24,8 @@ const AleasatPage: React.FC = () => {
           src="https://media.githubusercontent.com/media/balloon4computing/artifact/main/image1.png" 
           alt="ALEASAT Satellite" 
           className="aleasat-image"
+          loading="eager"
+          decoding="async"
         />
         <section className="aleasat-description">
           <h3>Going to Orbit</h3>

@@ -53,6 +53,8 @@ const Navbar: React.FC = () => {
             src="/images/icons/sfusatlogo.png" 
             alt="SFU SAT Logo" 
             className="logo-button" 
+            loading="eager"
+            decoding="async"
           />
         </Link>
       </div>

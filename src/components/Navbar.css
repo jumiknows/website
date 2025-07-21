@@ -17,6 +17,14 @@
 .navbar-logo img {
   height: 32px;
   transition: transform 0.2s ease;
+  opacity: 0;
+  animation: fadeInImage 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInImage {
+  to {
+    opacity: 1;
+  }
 }
 
 .navbar-logo img:hover {

@@ -79,6 +79,16 @@ const slideshowImages = [
 const Outreach: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Preload first few slideshow images for better performance
+  useEffect(() => {
+    const preloadImages = slideshowImages.slice(0, 3).map(img => img.url);
+    
+    preloadImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
   // Auto-advance slideshow
   useEffect(() => {
     const interval = setInterval(() => {
@@ -107,7 +117,12 @@ const Outreach: React.FC = () => {
             {slideshowImages.map((image, index) => (
               <div key={index} className="slide">
                 <div className="slide-single-image">
-                  <img src={image.url} alt={image.alt} />
+                  <img 
+                    src={image.url} 
+                    alt={image.alt} 
+                    loading={index < 3 ? "eager" : "lazy"}
+                    decoding="async"
+                  />
                 </div>
               </div>
             ))}
