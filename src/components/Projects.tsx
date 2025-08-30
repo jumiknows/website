@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Projects.css';
 
-const projects = [
+interface Project {
+  title: string;
+  image: string;
+  description: string;
+  link?: string;
+}
+
+const projects: Project[] = [
   { 
     title: 'ALEASAT', 
     image: 'https://media.githubusercontent.com/media/balloon4computing/artifact/main/image1.png', 
     description: 'Our most ambitious project yet. Alongside UBC Orbit, we are sending a 1U cube satellite into space. The satellite will provide research data relating to human physiology and will provide pictures of Earth for amateur radio operators.', 
-    // link: '/projects/aleasat' 
+    link: '/projects/aleasat' 
   },
   { 
     title: 'Balloon 3', 
@@ -47,6 +55,19 @@ const projects = [
 ];
 
 const ProjectsPage: React.FC = () => {
+  // Preload critical project images
+  useEffect(() => {
+    const preloadImages = [
+      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/image1.png",
+      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/image2.jpeg",
+      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/image3.png"
+    ];
+
+    preloadImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
   return (
     <div className="projects-page">
       {/* <h2 className="projects-title">Projects</h2> */}
@@ -55,13 +76,35 @@ const ProjectsPage: React.FC = () => {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            {/* <a href={project.link}> */}
-              <img src={project.image} alt={project.title} className="project-image" />
-              <div className="project-details">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-              </div>
-            {/* </a> */}
+            {project.link ? (
+              <Link to={project.link}>
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="project-image"
+                  loading={index < 3 ? "eager" : "lazy"}
+                  decoding="async"
+                />
+                <div className="project-details">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                </div>
+              </Link>
+            ) : (
+              <>
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="project-image"
+                  loading={index < 3 ? "eager" : "lazy"}
+                  decoding="async"
+                />
+                <div className="project-details">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                </div>
+              </>
+            )}
           </div>
         ))}
       </div>

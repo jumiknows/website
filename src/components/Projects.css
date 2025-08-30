@@ -35,8 +35,19 @@
   color: inherit; /* Inherit color from parent */
 }
 
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
 .project-card:hover {
   transform: translateY(-6.25px);
+}
+
+.project-card a:hover {
+  transform: scale(1.02);
 }
 
 .project-image {
@@ -45,6 +56,14 @@
   height: 250px; /* Set a fixed height for images */
   object-fit: cover; /* Ensure the image covers the area without distortion */
   display: block;
+  opacity: 0;
+  animation: fadeInImage 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInImage {
+  to {
+    opacity: 1;
+  }
 }
 
 .project-details {

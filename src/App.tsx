@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import AleasatPage from './components/pages/Aleasat';
 import './App.css';
 
 const App: React.FC = () => {
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/website" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/aleasat" element={<AleasatPage />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/outreach" element={<Outreach />} />
             <Route path="/about" element={<About />} />
