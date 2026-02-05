@@ -20,37 +20,37 @@ const projects: Project[] = [
     title: 'Balloon 3', 
     image: 'https://media.githubusercontent.com/media/balloon4computing/artifact/main/image2.jpeg', 
     description: 'Repeating our tradition for our new recruits we launched our most successful balloon yet.', 
-    // link: '/projects/balloon3' 
+    link: '/projects/balloon3' 
   },
   { 
     title: 'CSDC5', 
     image: 'https://media.githubusercontent.com/media/balloon4computing/artifact/main/image3.png', 
     description: 'Our second time in the competition and utilizing what we learned from the previous one we continued to develop our custom hardware.', 
-    // link: '/projects/csdc5' 
+    link: '/projects/csdc5' 
   },
   { 
     title: 'CCP1', 
     image: 'https://media.githubusercontent.com/media/balloon4computing/artifact/main/image4.jpg', 
     description: 'Building from our success of CSDC4 we partnered with 2 other universities to build a 2U cube satellite funded from the Canadian Space Agency.', 
-    // link: '/projects/ccp1' 
+    link: '/projects/ccp1' 
   },
   { 
     title: 'Balloon 2', 
     image: 'https://media.githubusercontent.com/media/balloon4computing/artifact/main/image5.jpg', 
     description: 'The first balloon helped us gain invaluable experience so we did it again to help our new members. Many of the leads from this project went on to lead CSDC5 and ALEA.', 
-    // link: '/projects/balloon2' 
+    link: '/projects/balloon2' 
   },
   { 
     title: 'CSDC4', 
     image: 'https://media.githubusercontent.com/media/balloon4computing/artifact/main/image6.jpeg', 
     description: 'Our first competition and opportunity to prove ourselves as satellite engineers.', 
-    // link: '/projects/csdc4' 
+    link: '/projects/csdc4' 
   },
   { 
     title: 'Balloon 1', 
     image: 'https://media.githubusercontent.com/media/balloon4computing/artifact/main/image8.jpeg', 
     description: 'Latobius was the first High Altitude Balloon launched by SFU Satellite Design Team. This mission was used to test our integration capabilities before starting on CSDC4.', 
-    // link: '/projects/balloon1' 
+    link: '/projects/balloon1' 
   }
 ];
 

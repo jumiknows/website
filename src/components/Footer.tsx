@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <p>© 2016 - 2025 SFU Satellite Design Team</p>
+      <p>© 2016 - 2026 SFU Satellite Design Team</p>
       <a href="mailto:sfusat@sfu.ca" className="mail-link" aria-label="Email us">
         <FontAwesomeIcon icon={faEnvelope} />
       </a>

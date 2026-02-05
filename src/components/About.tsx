@@ -107,7 +107,7 @@ const AboutPage: React.FC = () => {
                   <span className="stat-label">Specialized Teams</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">5+</span>
+                  <span className="stat-number">10+</span>
                   <span className="stat-label">Years Active</span>
                 </div>
               </div>

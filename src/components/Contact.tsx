@@ -7,17 +7,23 @@ const Contact: React.FC = () => {
     <div className="contact-container">
       <h1>Contact Us</h1>
       <p>
-        SFU Satellite is currently hiring for ALEASAT technical roles. Please refer to our{' '}
+        {/* SFU Satellite is currently hiring for ALEASAT technical roles. Please refer to our{' '} */}
+        SFU Satellite is currently hiring for ROVER technical roles. Please refer to our{' '}
         <Link to="/about" className="about-link">About page</Link> for more information on each team.
       </p>
-      <a 
-        href="https://docs.google.com/forms/d/e/1FAIpQLSd1xAMfur9Ph2jHpVCJbxminxZgOugMxxdfC3YYriHWUPLHUg/viewform" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="contact-button"
-      >
-        Application Form
-      </a>
+      <div className="contact-buttons">
+        <a 
+          href="https://docs.google.com/forms/d/1umzhI7xtnXlMqQBpTnJ98czaR3UakKeX7vNi1ut38yE/edit?ts=697ff1a7" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="contact-button"
+        >
+          Application Form
+        </a>
+        <Link to="/rover" className="contact-button learn-more-button">
+          Learn More
+        </Link>
+      </div>
 
       {/* Contact Form Section */}
       <div className="contact-form-section">

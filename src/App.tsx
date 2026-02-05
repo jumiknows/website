@@ -9,7 +9,14 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Rover from './components/Rover';
 import AleasatPage from './components/pages/Aleasat';
+import Balloon3Page from './components/pages/Balloon3';
+import CSDC5Page from './components/pages/CSDC5';
+import CCP1Page from './components/pages/CCP1';
+import Balloon2Page from './components/pages/Balloon2';
+import CSDC4Page from './components/pages/CSDC4';
+import Balloon1Page from './components/pages/Balloon1';
 import './App.css';
 
 const App: React.FC = () => {
@@ -22,8 +29,15 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/website" element={<Home />} />
+            <Route path="/rover" element={<Rover />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/aleasat" element={<AleasatPage />} />
+            <Route path="/projects/balloon3" element={<Balloon3Page />} />
+            <Route path="/projects/csdc5" element={<CSDC5Page />} />
+            <Route path="/projects/ccp1" element={<CCP1Page />} />
+            <Route path="/projects/balloon2" element={<Balloon2Page />} />
+            <Route path="/projects/csdc4" element={<CSDC4Page />} />
+            <Route path="/projects/balloon1" element={<Balloon1Page />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/outreach" element={<Outreach />} />
             <Route path="/about" element={<About />} />
