@@ -11,6 +11,12 @@ interface Project {
 
 const projects: Project[] = [
   { 
+    title: 'Rover Challenge', 
+    image: '/images/rover/sfusat-recruitment-poster.webp', 
+    description: 'Design and deploy an autonomous rover for the Canadian International Rover Challenge. Push the boundaries of robotics, autonomy, and systems integration.', 
+    link: '/rover' 
+  },
+  { 
     title: 'ALEASAT', 
     image: 'https://media.githubusercontent.com/media/balloon4computing/artifact/main/image1.png', 
     description: 'Our most ambitious project yet. Alongside UBC Orbit, we are sending a 1U cube satellite into space. The satellite will provide research data relating to human physiology and will provide pictures of Earth for amateur radio operators.', 
