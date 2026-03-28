@@ -176,6 +176,14 @@ const Outreach: React.FC = () => {
           
           <div className="events-list">
             <div className="event-year">
+              <h3>2025</h3>
+              <ul>
+                <li>Darkvision Challenge May 2025</li>
+                <li>Abbotsford International Airshow August 2025</li>
+              </ul>
+            </div>
+
+            <div className="event-year">
               <h3>2024</h3>
               <ul>
                 <li>ESA's Fly Your Satellite April 2024</li>
