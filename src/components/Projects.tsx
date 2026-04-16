@@ -11,7 +11,7 @@ interface Project {
 
 const projects: Project[] = [
   { 
-    title: 'Rover Challenge', 
+    title: 'Polaris', 
     image: '/images/rover/sfusat-recruitment-poster.webp', 
     description: 'Design and deploy an autonomous rover for the Canadian International Rover Challenge. Push the boundaries of robotics, autonomy, and systems integration.', 
     link: '/rover' 
