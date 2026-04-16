@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Projects.css';
 
@@ -12,7 +12,7 @@ interface Project {
 const projects: Project[] = [
   { 
     title: 'Polaris', 
-    image: '/images/rover/sfusat-recruitment-poster.webp', 
+    image: '/images/rover/sfusat-recruitment-poster.png', 
     description: 'Design and deploy an autonomous rover for the Canadian International Rover Challenge. Push the boundaries of robotics, autonomy, and systems integration.', 
     link: '/rover' 
   },
@@ -61,19 +61,6 @@ const projects: Project[] = [
 ];
 
 const ProjectsPage: React.FC = () => {
-  // Preload critical project images
-  useEffect(() => {
-    const preloadImages = [
-      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/image1.png",
-      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/image2.jpeg",
-      "https://media.githubusercontent.com/media/balloon4computing/artifact/main/image3.png"
-    ];
-
-    preloadImages.forEach(src => {
-      const img = new Image();
-      img.src = src;
-    });
-  }, []);
   return (
     <div className="projects-page">
       {/* <h2 className="projects-title">Projects</h2> */}
@@ -88,7 +75,8 @@ const ProjectsPage: React.FC = () => {
                   src={project.image} 
                   alt={project.title} 
                   className="project-image"
-                  loading={index < 3 ? "eager" : "lazy"}
+                  loading={index < 1 ? "eager" : "lazy"}
+                  fetchPriority={index < 1 ? "high" : "low"}
                   decoding="async"
                 />
                 <div className="project-details">
@@ -102,7 +90,8 @@ const ProjectsPage: React.FC = () => {
                   src={project.image} 
                   alt={project.title} 
                   className="project-image"
-                  loading={index < 3 ? "eager" : "lazy"}
+                  loading={index < 1 ? "eager" : "lazy"}
+                  fetchPriority={index < 1 ? "high" : "low"}
                   decoding="async"
                 />
                 <div className="project-details">

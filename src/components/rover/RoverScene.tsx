@@ -8,7 +8,7 @@ interface RoverSceneProps {
 }
 
 const RoverScene: React.FC<RoverSceneProps> = ({ 
-  fallbackImage = '/images/rover/sfusat-recruitment-poster.webp' 
+  fallbackImage = '/images/rover/sfusat-recruitment-poster.png' 
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [showFallback, setShowFallback] = useState(false);

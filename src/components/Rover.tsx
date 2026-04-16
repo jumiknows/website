@@ -36,7 +36,7 @@ const Rover: React.FC = () => {
       <div className="rover-container">
         <div className="rover-image">
           <img 
-            src="/images/rover/sfusat-recruitment-poster.webp" 
+            src="/images/rover/sfusat-recruitment-poster.png" 
             alt="SFUSAT Wants You - Join our mission to Mars"
           />
         </div>
