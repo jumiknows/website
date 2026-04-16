@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Rover from './components/Rover';
+import RoverApply from './components/RoverApply';
 import AleasatPage from './components/pages/Aleasat';
 import Balloon3Page from './components/pages/Balloon3';
 import CSDC5Page from './components/pages/CSDC5';
@@ -30,6 +31,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/website" element={<Home />} />
             <Route path="/rover" element={<Rover />} />
+            <Route path="/rover/apply" element={<RoverApply />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/aleasat" element={<AleasatPage />} />
             <Route path="/projects/balloon3" element={<Balloon3Page />} />

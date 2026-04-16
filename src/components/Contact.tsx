@@ -75,14 +75,9 @@ const Contact: React.FC = () => {
         <Link to="/about" className="about-link">About page</Link> for more information on each team.
       </p>
       <div className="contact-buttons">
-        <a 
-          href="https://docs.google.com/forms/d/1umzhI7xtnXlMqQBpTnJ98czaR3UakKeX7vNi1ut38yE/edit?ts=697ff1a7" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="contact-button"
-        >
+        <Link to="/rover/apply" className="contact-button">
           Application Form
-        </a>
+        </Link>
         <Link to="/rover" className="contact-button learn-more-button">
           Learn More
         </Link>

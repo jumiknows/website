@@ -60,14 +60,9 @@ const Rover: React.FC = () => {
             </div>
           </div>
           <div className="rover-buttons">
-            <a 
-              href="https://docs.google.com/forms/d/1umzhI7xtnXlMqQBpTnJ98czaR3UakKeX7vNi1ut38yE/edit?ts=697ff1a7" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="rover-button"
-            >
+            <Link to="/rover/apply" className="rover-button">
               Apply Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>
